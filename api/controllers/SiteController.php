@@ -15,7 +15,7 @@ class SiteController extends BaseController
      */
     public function actionIndex()
     {
-        $this->returnJson(self::REQUEST_NORMAL_MSGCODE, '欢迎！');
+        $this->returnJson(self::REQUEST_NORMAL_MSGCODE, '', '欢迎！');
     }
 
     /**

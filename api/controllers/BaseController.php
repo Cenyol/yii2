@@ -6,17 +6,18 @@ use yii\web\Controller;
 use yii\helpers\Json;
 
 /**
- * Site controller
+ * Base controller
  */
 class BaseController extends Controller
 {
-    public $uid = 0;                            // 用于保存用户的uid
+    public $uid = 0;                            // 用于解析token之后，保存用户的uid
     public $enableCsrfValidation = false;       // 以便能够直接在App端使用Post方式请求
     
+    // 定义一些不需要进行token验证的路由
     private $notNeedVerify = [
         'site/login',
 
-        // 测试时，需要临时去掉验证的action
+        // 测试时，需要临时去掉验证的路由
 //         'site/regist',
     ];
     

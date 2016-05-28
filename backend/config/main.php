@@ -13,6 +13,16 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+        
+        // 去掉框架默认的jquery
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'js'=>[]
+                ],
+            ],
+        ],
+        
         'user' => [
             'identityClass' => 'backend\models\User',
             'enableAutoLogin' => true,

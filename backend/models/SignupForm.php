@@ -55,4 +55,16 @@ class SignupForm extends Model
 
         return null;
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'email' => '邮箱',
+            'password' => '密码',
+            'username' => '用户名',
+        ];
+    }
 }

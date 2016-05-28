@@ -1,4 +1,10 @@
-						<!-- PAGE HEADER-->
+<?php 
+
+    $this->title = '首页';
+
+?>
+
+<!-- PAGE HEADER-->
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="page-header">

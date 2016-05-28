@@ -6,6 +6,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\helpers\Url;
 
 $this->title = '登录';
 ?>
@@ -56,9 +57,9 @@ $this->title = '登录';
 								
                                 <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
                     
-                                <?= $form->field($model, 'username')->textInput(['style' => 'padding-left:8px !important;']) ?>
+                                <?= $form->field($model, 'username', ['template' => "{label}<i class='fa fa-user'></i>{input}\n{hint}\n{error}"])->textInput()?>
                 
-                                <?= $form->field($model, 'password')->passwordInput(['style' => 'padding-left:8px !important;']) ?>
+                                <?= $form->field($model, 'password', ['template' => "{label}<i class='fa fa-lock'></i>{input}\n{hint}\n{error}"])->passwordInput()?>
                 
                                 <div class="form-actions">
                                     <?= $form->field($model, 'rememberMe')->checkbox(['class'=>"uniform"]) ?>
@@ -66,6 +67,9 @@ $this->title = '登录';
                                 </div>
                                     
                                 <?php ActiveForm::end(); ?>
+								<div class="login-helpers">
+    								<a href="<?php echo Url::toRoute(['site/signup'], true); ?>">注册!</a>
+								</div>
             
 							</div>
 						</div>

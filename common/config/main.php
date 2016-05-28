@@ -12,6 +12,7 @@ return [
             'rules' => [
                 // 定义特殊的路由规则，如login可以映射为site/login
 		        'login' =>'site/login',
+		        'signup' =>'site/signup',
             ],
         ],
         

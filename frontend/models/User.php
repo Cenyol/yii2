@@ -30,7 +30,7 @@ class User extends BaseModel implements IdentityInterface
      */
     public static function tableName()
     {
-        return '{{%user_frontend}}';
+        return '{{%user}}';
     }
 
     /**

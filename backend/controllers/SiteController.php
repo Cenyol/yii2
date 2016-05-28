@@ -40,7 +40,7 @@ class SiteController extends BaseController
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+//                     'logout' => ['post'],
                 ],
             ],
         ];
@@ -63,6 +63,10 @@ class SiteController extends BaseController
         return $this->render('index');
     }
 
+    /**
+     * by cenyol 2016-05-27 20:54:59
+     * 登录
+     */
     public function actionLogin()
     {
         $this->layout = false;
@@ -80,6 +84,9 @@ class SiteController extends BaseController
         }
     }
 
+    /**
+     * 退出
+     */
     public function actionLogout()
     {
         Yii::$app->user->logout();
@@ -88,15 +95,16 @@ class SiteController extends BaseController
     }
 
     /**
-     * Signs user up.
-     *
-     * @return mixed
+     * by cenyol 2016-05-27 20:42:01
+     * 后台用户注册页面，正常情况下不开放
      */
     public function actionSignup()
     {
+        $this->layout = false;
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
-            if ($user = $model->signup()) {
+            $user = $model->signup();
+            if ($user) {
                 if (Yii::$app->getUser()->login($user)) {
                     return $this->goHome();
                 }

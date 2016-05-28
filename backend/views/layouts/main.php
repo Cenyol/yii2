@@ -40,8 +40,9 @@ AppAsset::register($this);
 	<!-- FONTS -->
 	<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	
-	<!-- JQUERY -->
+	<!-- JQUERY 
 	<script src="<?= Yii::$app->request->baseUrl;?>/js/jquery/jquery-2.0.3.min.js"></script>
+	-->
 	
     <?php $this->head() ?>
 </head>
@@ -228,50 +229,7 @@ AppAsset::register($this);
 		</div>
 	</section>
 	<!--/PAGE -->
-	<!-- JAVASCRIPTS -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<!-- JQUERY UI-->
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
-	<!-- BOOTSTRAP -->
-	<script src="<?= Yii::$app->request->baseUrl;?>/bootstrap-dist/js/bootstrap.min.js"></script>
-	
-		
-	<!-- DATE RANGE PICKER -->
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/bootstrap-daterangepicker/moment.min.js"></script>
-	
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/bootstrap-daterangepicker/daterangepicker.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
-	<!-- SLIMSCROLL -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
-	<!-- BLOCK UI -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
-	<!-- SPARKLINES -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/sparklines/jquery.sparkline.min.js"></script>
-	<!-- EASY PIE CHART -->
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/easypiechart/jquery.easypiechart.min.js"></script>
-	<!-- FLOT CHARTS -->
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/flot/jquery.flot.min.js"></script>
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/flot/jquery.flot.time.min.js"></script>
-    <script src="<?= Yii::$app->request->baseUrl;?>/js/flot/jquery.flot.selection.min.js"></script>
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/flot/jquery.flot.resize.min.js"></script>
-    <script src="<?= Yii::$app->request->baseUrl;?>/js/flot/jquery.flot.pie.min.js"></script>
-    <script src="<?= Yii::$app->request->baseUrl;?>/js/flot/jquery.flot.stack.min.js"></script>
-    <script src="<?= Yii::$app->request->baseUrl;?>/js/flot/jquery.flot.crosshair.min.js"></script>
-	<!-- TODO -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/jquery-todo/js/paddystodolist.js"></script>
-	<!-- TIMEAGO -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/timeago/jquery.timeago.min.js"></script>
-	<!-- FULL CALENDAR -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/fullcalendar/fullcalendar.min.js"></script>
-	<!-- COOKIE -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/jQuery-Cookie/jquery.cookie.min.js"></script>
-	<!-- GRITTER -->
-	<script type="text/javascript" src="<?= Yii::$app->request->baseUrl;?>/js/gritter/js/jquery.gritter.min.js"></script>
-	<!-- CUSTOM SCRIPT -->
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/script.js"></script>
+
 	<script>
 		jQuery(document).ready(function() {		
 			App.setPage("index");  //Set current page

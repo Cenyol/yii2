@@ -40,10 +40,6 @@ AppAsset::register($this);
 	<!-- FONTS -->
 	<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 	
-	<!-- JQUERY 
-	<script src="<?= Yii::$app->request->baseUrl;?>/js/jquery/jquery-2.0.3.min.js"></script>
-	-->
-	
     <?php $this->head() ?>
 </head>
 <body>

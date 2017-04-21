@@ -11,6 +11,23 @@ class BaseModel extends ActiveRecord
 {
     const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 10;
+
+    public static $statusArray = [
+        self::STATUS_ACTIVE => '正常',
+        self::STATUS_DELETED => '无效'
+    ];
+    
+    /**
+     * by cenyol 2016-06-01 11:23:12
+     * 通过id获取name，这方法貌似可以通用，先写这里吧
+    */
+    public static function getNameById($id){
+        $model = self::findOne($id);
+        if($model && $model->hasAttribute('name')){
+            return $model->name;
+        }
+        return '';
+    }
     
     /**
      * by cenyol 2016-02-28 15:09:32

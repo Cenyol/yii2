@@ -38,7 +38,7 @@ AppAsset::register($this);
 	<!-- FUELUX TREE -->
 	<link rel="stylesheet" type="text/css" href="<?= Yii::$app->request->baseUrl;?>/js/fuelux-tree/fuelux.min.css" />
 	<!-- FONTS -->
-	<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+<!-- 	<link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'> -->
 	
     <?php $this->head() ?>
 </head>

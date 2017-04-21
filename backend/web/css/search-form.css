@@ -1,0 +1,13 @@
+.form-group{
+    display: inline-block;
+    width: 220px;    	
+}
+.form-control{
+	display: initial;
+    width: 60%;
+}
+
+.select2-container--krajee{
+	width: 70%;
+	display: inherit;
+}
